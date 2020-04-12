@@ -1,0 +1,34 @@
+<html>
+<head><meta charset="utf-8" /></head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<body>
+    <div>Personal set of plots regarding the COVID-19 outbreak. Left column displays quantities in linear scale, right column in logarithmic scale. Countries can be toggled on/off by clicking in their respective legends. Double clicking a country hides all but the clicked country. <br><br>
+
+        In particular I am interested in which I think it is the most reasonable first order intercountry comparison of the phenomena by looking at the amount of deaths caused by SARS-CoV-2 normalized by population size, with focus on the South American situation compared to the most affected countries worldwide.<br><br>
+
+Data is provided by the European Centre for Disease Prevention and Control (ECDC), freely available at: <a href=https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide>https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide</a>.
+    </div>
+<table width="100%">
+    <tr>
+        <td><iframe id="norm_cases" scrolling="no" style="border:none;" seamless="seamless" src="plots/norm_cases.html" height="525" width="100%"></iframe></td>
+        <td><iframe id="norm_cases_log" scrolling="no" style="border:none;" seamless="seamless" src="plots/norm_cases_log.html" height="525" width="100%"></iframe></td>
+    </tr>
+    <tr>
+        <td><iframe id="norm_deaths" scrolling="no" style="border:none;" seamless="seamless" src="plots/norm_deaths.html" height="525" width="100%"></iframe></td>
+        <td><iframe id="norm_deaths_log" scrolling="no" style="border:none;" seamless="seamless" src="plots/norm_deaths_log.html" height="525" width="100%"></iframe></td>
+    </tr>
+    <tr>
+      <td><iframe id="cases" scrolling="no" style="border:none;" seamless="seamless" src="plots/cases.html" height="525" width="100%"></iframe></td>
+      <td><iframe id="cases_log" scrolling="no" style="border:none;" seamless="seamless" src="plots/cases_log.html" height="525" width="100%"></iframe></td>
+  </tr>
+  <tr>
+      <td><iframe id="deaths" scrolling="no" style="border:none;" seamless="seamless" src="plots/deaths.html" height="525" width="100%"></iframe></td>
+      <td><iframe id="deaths_log" scrolling="no" style="border:none;" seamless="seamless" src="plots/deaths_log.html" height="525" width="100%"></iframe></td>
+  </tr>
+</table>
+
+<div>
+    Website and plots created by Mauro Fontana. Sources for the plotting script and the website itself can be found at <a href=https://github.com/mfontanaar/covid-19>https://github.com/mfontanaar/covid-19</a><br>. Argentina, 2020.<br>
+</div>
+</body>
+</html>
